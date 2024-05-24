@@ -24,6 +24,30 @@ ul {
     list-style: none;
 }
 
+h1 {
+    font-size: 2.25rem;
+    line-height: 150%;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #C05F28;
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 150%;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #C05F28;
+    margin-bottom: 0.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-style: normal;
+    color: #C05F28;
+    margin-bottom: 0.75rem;
+}
+
 /*___HEADER___*/
 
 header {
@@ -66,6 +90,20 @@ header {
     height: 180px;
 }
 
+/*___MAIN___*/
+
+main {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+section {
+    padding: 0 1.5rem;
+}
+
 /*___FOOTER___*/
 
 footer {
@@ -74,9 +112,26 @@ footer {
 }
 
 .footerContent {
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footerLinks {
     display: flex;
     flex-direction: row;
-    align-content: space-between;
+    justify-content: space-between;
+}
+
+.footerNav ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.footerNav ul li {
+    padding: 0.5rem 0;
 }
 
 li a {
@@ -86,10 +141,83 @@ li a {
     color: #F19F24;
 }
 
+.social a {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
 .footerLegal p {
+    width: 100vw;
     border-top: 1px solid #658320;
     font-size: 1rem;
     text-align: center;
     padding: 0.75rem 0;
     margin-bottom: 0;
+}
+
+/*___Hi There Page___*/
+
+.contentReference {
+    margin: 2rem 0;
+    padding: 18px 0 36px;
+    background-color: #FBE2BD;
+    width: 100vw;
+}
+
+.cardReference {
+    display: inline-block;
+    min-width: 240px;
+    max-width: 480px;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.cardReference img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1.5rem;
+}
+
+.cardReference p {
+    color: #765746;
+    font-style: italic;
+}
+
+/*___RESPONSIVE___*/
+
+@media (min-width: 780px) {
+
+    section {
+        padding: 0 12rem;
+        max-width: 1500px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerContent {
+        padding: 2rem 6rem;
+        max-width: 1500px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .footerTexts {
+        width: 60%;
+    }
+
+    .footerLinks {
+        width: 20%;
+    }
+
+    .footerNav ul li {
+        padding: 0.5rem;
+    }
 }

@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
     box-sizing: border-box;
     font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 400;
@@ -66,8 +67,6 @@ p {
 
 body {
     background-color: #FEF5E9;
-    text-decoration: none;
-
 }
 
 
