@@ -5,24 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hi There</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/styles2.css">
     <link rel="shortcut icon" href="../assets/Logo_icon_woodencio.svg" type="image/x-icon">
 </head>
 
 <body>
 
     <header>
-        <a class="logo" href="../index.html">
-            <img src="../assets/logo_woodencio.svg" alt="Woodencio Logo">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="#">Hi There</a></li>
-                <li><a href="./history.html">My History</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
-                <li><a href="./contact.html">Contact Me</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="../index.html">
+                    <img src="../assets/logo_woodencio.svg" alt="Woodencio Madeiros">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="active" class="nav-link active" href="#">Hi There</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./history.html">My History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -35,7 +54,7 @@
                 all.
             </p>
         </section>
-        <section>
+        <section class="col-lg-8">
             <p>I am a piece of wood. I have my body, my legs, my arms and my thoughts. I know I look a little stiff, but
                 I am as open minded as a squared piece of wood could be. I also have glasses. I wear glasses because I
                 have myopia and not because I want to make a fashion statement or something. </p>
@@ -70,7 +89,7 @@
                     with that name. Sorry. Woodencio, you said?.</p>
             </div>
         </section>
-        <section>
+        <section class="col-lg-8">
             <p>When I was little I liked to look for the sun and photosynthesize, but I grew up as a piece of wood an no
                 longer do that stuff. Now if I am at the sun is just to enjoy it. And to get a good tan. Oh, I love to
                 have a good tan, but also I have to care about my skin because of melanoma. Wait a minute... do I have
@@ -86,13 +105,13 @@
 
     <footer>
         <div class="footerContent">
-            <div class="footerTexts">
+            <div class="col-lg-6 footerTexts">
                 <h2>And this is a Footer</h2>
                 <p>Is the final part of a webpage located at the bottom. But don’t get misleaded by its name. You can be
                     at the end of the webpage but not at the end of this journey. So keep searching in the rest of this
                     website, and who knows, you could enjoy it.</p>
             </div>
-            <div class="footerLinks">
+            <div class="col-lg-6 footerLinks">
                 <div>
                     <nav class="footerNav">
                         <ul>
@@ -121,7 +140,7 @@
             <p>Cachucha Partner and Wife Productions © 2024</p>
         </div>
     </footer>
-
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

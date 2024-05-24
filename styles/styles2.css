@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #491F08;
+}
+
+/*___BODY___*/
+
+body {
+    background-color: #FEF5E9;
+    font-size: 1.5rem;
+    line-height: 135%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/*___HEADER___*/
+
+header {
+    position: absolute;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar-brand img {
+    height: 48px;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    line-height: 135%;
+    text-transform: uppercase;
+    color: #F19F24;
+}
+
+.nav-link:hover {
+    color: #658320;
+}
+
+#active {
+    color: #658320
+}
+
+
+.heroImage {
+    background-color: #491F08;
+    background-image: url(../assets/heroCover.jpg);
+    background-position: top;
+    object-fit: cover;
+    border-bottom: 3px solid #658320;
+    width: 100%;
+    height: 180px;
+}
+
+/*___FOOTER___*/
+
+footer {
+    background-color: #120802;
+    border-top: 18px solid #658320;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+li a {
+    font-size: 1.125rem;
+    line-height: 135%;
+    text-transform: uppercase;
+    color: #F19F24;
+}
+
+.footerLegal p {
+    border-top: 1px solid #658320;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.75rem 0;
+    margin-bottom: 0;
+}
