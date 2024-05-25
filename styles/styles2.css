@@ -8,7 +8,7 @@
     color: #491F08;
 }
 
-/*___BODY___*/
+/*______BODY______*/
 
 body {
     background-color: #FEF5E9;
@@ -48,7 +48,7 @@ h3 {
     margin-bottom: 0.75rem;
 }
 
-/*___HEADER___*/
+/*______HEADER______*/
 
 header {
     position: absolute;
@@ -90,10 +90,10 @@ header {
     height: 180px;
 }
 
-/*___MAIN___*/
+/*______MAIN______*/
 
 main {
-    padding: 4rem 0;
+    padding: 4rem 0 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,7 +104,11 @@ section {
     padding: 0 1.5rem;
 }
 
-/*___FOOTER___*/
+.subtitle {
+    color: #C05F28;
+}
+
+/*______FOOTER______*/
 
 footer {
     background-color: #120802;
@@ -117,6 +121,10 @@ footer {
     flex-direction: column;
 }
 
+.footerTexts p {
+    color: #C05F28;
+    opacity: 60%;
+}
 
 .footerLinks {
     display: flex;
@@ -149,6 +157,7 @@ li a {
 
 .footerLegal p {
     width: 100vw;
+    color: #C05F28;
     border-top: 1px solid #658320;
     font-size: 1rem;
     text-align: center;
@@ -156,12 +165,12 @@ li a {
     margin-bottom: 0;
 }
 
-/*___Hi There Page___*/
+/*______Hi There Page______*/
 
 .contentReference {
     width: 100%;
     background-color: #FBE2BD;
-    margin: 2rem 0;
+    margin: 2rem 0 3rem;
 }
 
 .cardReference {
@@ -187,12 +196,62 @@ li a {
     font-style: italic;
 }
 
-/*___RESPONSIVE___*/
+/*______Contact Me______*/
+
+.form {
+    background-color: #658320;
+    padding: 36px 60px 48px;
+}
+
+.form h2 {
+    text-align: center;
+    color: #FBE2BD;
+}
+
+.form p,
+.form label {
+    color: #FBE2BD;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    width: 100%;
+    color: #491F08;
+    padding: 9px 12px;
+}
+
+input {
+    padding: 9px;
+    margin-bottom: 18px;
+}
+
+.sr-only {
+    display: none;
+}
+
+.map {
+    background-color: #FBE2BD;
+    padding: 36px 60px 48px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.map h2,
+.map p {
+    text-align: center;
+}
+
+/*______RESPONSIVE______*/
 
 @media (min-width: 780px) {
 
     section {
-        padding: 0 12rem;
+        padding: 0 6rem;
         max-width: 1500px;
     }
 
