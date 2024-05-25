@@ -54,59 +54,58 @@
                 <h1>Contact Me</h1>
                 <p class="subtitle">Pretty pretty please write me something, I feel so lonely.</p>
             </div>
+        </section>
 
-            <!--Contact Form-->
-            <div class="row contactme">
-                <div class="col-12 col-xl-6 cardContent form">
-                    <h2>Leave me a message</h2>
-                    <form>
-                        <div class="form-group">
-                            <label class="sr-only" for="name">Email address:</label>
-                            <input type="name" class="form-control" id="name" placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <label class="sr-only" for="email">Email address:</label>
-                            <input type="email" class="form-control" id="email" placeholder="Your Email">
-                        </div>
-                        <div class="form-group">
-                            <textarea name="" id="contactMessage" cols="60" rows="6"
-                                placeholder="Type your thoughts here"></textarea>
-                        </div>
-                        <div class="checkbox">
-                            <p>Your thoughts about Woodencio:</p>
-                            <label><input type="checkbox"> Remember me</label>
-                        </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
-                        <div>
-                            <p>Your thoughts about Woodencio:</p>
+        <!--Contact Form-->
+        <div class="row contactMe">
+            <div class="col-12 col-xl-6 cardContent form">
+                <h2>Leave me a message</h2>
+                <form>
+                    <div>
+                        <label class="sr-only" for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label class="sr-only" for="email">Your Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email Address">
+                    </div>
+                    <div>
+                        <label class="sr-only" for="contactMessage">Type your thoughts</label>
+                        <textarea name="" id="contactMessage" cols="60" rows="6"
+                            placeholder="Type your thoughts here"></textarea>
+                    </div>
+                    <div class="formAbout">
+                        <p>Your thoughts about Woodencio:</p>
+                        <div class="formAboutCheck">
                             <input type="radio" name="coolWoodencio" id="contactAwesome">
-                            <label for="contactAwesome">I think Woodencio is the most awesome individual in the whole
-                                universe</label>
-                            <br>
+                            <label for="contactAwesome">I think Woodencio is the most awesome individual in the
+                                whole universe</label>
+                        </div>
+                        <div class="formAboutCheck">
                             <input type="radio" name="coolWoodencio" id="contactNotSoAwesome">
-                            <label for="contactNotSoAwesome">I think Woodencio is not so awesome cause am an awful and
-                                bitter
-                                person</label>
-                            <br>
+                            <label for="contactNotSoAwesome">I think Woodencio is not so awesome cause I'm an awful
+                                and bitter person</label>
+                        </div>
+                        <div class="formAboutCheck">
                             <input type="checkbox" name="newsletter" id="contactNewsletter" value="">
                             <label for="contactNewsletter">I want to receive awesome content from Woodencio</label>
-
-                            <input class="button" type="submit" value="Send your message">
-                            <div>
-                    </form>
-                </div>
-
-                <!--googlemaps iframe-->
-                <div class="col-12 col-xl-6 cardContent map">
-                    <h2>Where to find me</h2>
-                    <p>These is the place where I am currently wandering minding my own bussines</p>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6569.0731082674765!2d-56.13946792603094!3d-34.882131273770895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suy!4v1714964904597!5m2!1sen!2suy"
-                        width="600" height="600" style="border:0;" allowfullscreen="true" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                        </div>
+                    </div>
+                    <input class="button" type="submit" value="Send your message">
+                </form>
             </div>
-        </section>
+
+            <!--googlemaps iframe-->
+
+            <div class="col-12 col-xl-6 cardContent map">
+                <h2>Where to find me</h2>
+                <p>These is the place where I am currently wandering, minding my own bussines</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6569.0731082674765!2d-56.13946792603094!3d-34.882131273770895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suy!4v1714964904597!5m2!1sen!2suy"
+                    width="600" height="600" style="border:0;" allowfullscreen="true" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -121,11 +120,11 @@
                 <div>
                     <nav class="footerNav">
                         <ul>
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="./hi_there.html">Hi There</a></li>
-                            <li><a href="./history.html">My History</a></li>
-                            <li><a href="./gallery.html">Gallery</a></li>
-                            <li><a href="#">Contact Me</a></li>
+                            <li><a class="nav-link" href="../index.html">Home</a></li>
+                            <li><a class="nav-link" href="./hi_there.html">Hi There</a></li>
+                            <li><a class="nav-link" href="./history.html">My History</a></li>
+                            <li><a class="nav-link" href="./gallery.html">Gallery</a></li>
+                            <li><a id="active" class="nav-link" href="#">Contact Me</a></li>
                         </ul>
                     </nav>
                 </div>
