@@ -22,6 +22,7 @@ a {
 
 ul {
     list-style: none;
+    padding-left: 0;
 }
 
 h1 {
@@ -135,6 +136,16 @@ main {
     align-items: center;
 }
 
+.mainHome {
+    height: 100vh;
+    background-color: #491F08;
+    background-image: url(../assets/heroCover.jpg);
+    padding: 0 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 section {
     width: 100%;
     padding: 0 1.5rem;
@@ -221,13 +232,13 @@ footer {
 
 /*______Hi There Page______*/
 
-.contentReference {
+.content-reference {
     width: 100%;
     background-color: #FBE2BD;
     margin: 2rem 0 3rem;
 }
 
-.cardReference {
+.card-reference {
     max-width: 480px;
     text-align: center;
     margin: 0.75rem;
@@ -237,7 +248,7 @@ footer {
     align-items: center;
 }
 
-.cardReference img {
+.card-reference img {
     width: 180px;
     height: 180px;
     border-radius: 50%;
@@ -245,10 +256,61 @@ footer {
     margin: 1.5rem;
 }
 
-.cardReference p {
+.card-reference p {
     color: #765746;
     font-style: italic;
 }
+
+/*______GALLERY______*/
+
+
+.gallery {
+    width: 100%;
+    padding: 0 1.5rem;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.image-gallery>li {
+    /*flex: 1 1 auto;*/
+    flex-grow: 1;
+    flex-basis: auto;
+    /* or flex: auto; */
+    height: 300px;
+    position: relative;
+}
+
+
+.image-gallery::after {
+    content: "";
+    flex-grow: 999;
+}
+
+.image-gallery li img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.over-text span {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: #F7C67C;
+    background: hsla(0, 0%, 0%, 0.5);
+    opacity: 0;
+    padding: 1rem;
+}
+
+.image-gallery li:hover .over-text span {
+    opacity: 1;
+}
+
 
 /*______Contact Me______*/
 

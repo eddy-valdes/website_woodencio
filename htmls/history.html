@@ -6,30 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My History</title>
     <link rel="stylesheet" href="../styles/bootstrap.min.css">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <link rel="shortcut icon" href="../assets/Logo_icon_woodencio.svg" type="image/x-icon">
 </head>
 
 <body>
 
     <header>
-        <a class="logo" href="../index.html">
-            <img src="../assets/logo_woodencio.svg" alt="Woodencio Logo">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./hi_there.html">Hi There</a></li>
-                <li><a href="#">My History</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
-                <li><a href="./contact.html">Contact Me</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="../index.html">
+                    <img src="../assets/logo_woodencio.svg" alt="Woodencio Madeiros">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./hi_there.html">Hi There</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="active" class="nav-link" href="#">My History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
+    <div class="heroImage">
+    </div>
+
     <main>
-        <div class="heroImage">
-        </div>
         <section class="titular">
             <h1>My History</h1>
             <p class="subtitle">Prepare the tissues, it's time for the tears. Well, not really. In reality my history is
@@ -91,23 +110,23 @@
                 <div>
                     <nav class="footerNav">
                         <ul>
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="#">Hi There</a></li>
-                            <li><a href="./history.html">My History</a></li>
-                            <li><a href="./gallery.html">Gallery</a></li>
-                            <li><a href="./contact.html">Contact Me</a></li>
+                            <li><a class="nav-link" href="../index.html">Home</a></li>
+                            <li><a class="nav-link" href="./hi_there.html">Hi There</a></li>
+                            <li><a id="active" class="nav-link" href="#">My History</a></li>
+                            <li><a class="nav-link" href="./gallery.html">Gallery</a></li>
+                            <li><a class="nav-link" href="./contact.html">Contact Me</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="social">
-                    <a href="">
+                    <a href="https://www.behance.net/ed6raph" target="_blank">
                         <img src="../assets/icon_social_behance.svg" alt="Behance">
                     </a>
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/ed6raph/" target="_blank">
                         <img src="../assets/icon_social_linkedin.svg" alt="Linkedin">
                     </a>
-                    <a href="">
-                        <img src="../assets/icon_social_instagram.svg" alt="Instagram">
+                    <a href="https://github.com/eddy-valdes" target="_blank">
+                        <img src="../assets/icon_social_instagram.svg" alt="Github">
                     </a>
                 </div>
             </div>
