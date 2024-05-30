@@ -223,28 +223,24 @@ footer {
 
 /*______Home______*/
 
-.heroimage-home {
-    position: absolute;
-    z-index: -1;
-    height: 150vh;
+.main-home {
+    height: 63rem;
     width: 100%;
     background-color: #491F08;
     background-image: url(../assets/heroCover.jpg);
     background-position: top;
     object-fit: cover;
-}
-
-.main-home {
-    height: 110vh;
+    text-shadow: 2px 2px 4px #120802;
 }
 
 .titular-home {
     margin-top: 30vh;
+    z-index: 1;
 }
 
 .titular-home p {
     color: #FBE2BD;
-}
+    }
 
 .home {
     height: 60vh;
@@ -254,7 +250,6 @@ footer {
 
 .home-woodencio {
     height: 100%;
-    z-index: -1;
 }
 
 .home-button input {
@@ -462,20 +457,6 @@ iframe {
 
 /*______RESPONSIVE______*/
 
-@media (min-width: 576px) {
-    /*sm*/
-
-    /*______Home______*/
-
-    .heroimage-home {
-        height: 120vh;
-    }
-
-    .mainHome {
-        height: 100vh;
-    }
-}
-
 @media (min-width: 768px) {
     /*md*/
 
@@ -485,7 +466,11 @@ iframe {
 
     /*______Home______*/
 
-    .titularHome {
+    .main-home {
+        height: 100vh;
+    }
+
+    .titular-home {
         margin-top: 24vh;
     }
 
