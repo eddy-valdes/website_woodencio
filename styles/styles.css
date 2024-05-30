@@ -226,7 +226,7 @@ footer {
 .heroimage-home {
     position: absolute;
     z-index: -1;
-    height: 135vh;
+    height: 150vh;
     width: 100%;
     background-color: #491F08;
     background-image: url(../assets/heroCover.jpg);
@@ -468,7 +468,7 @@ iframe {
     /*______Home______*/
 
     .heroimage-home {
-        height: 100vh;
+        height: 120vh;
     }
 
     .mainHome {
