@@ -120,14 +120,14 @@ nav .container-fluid {
 
 .bg-light {
     background-color: #491F08;
-    background-image: url(../assets/heroCover.jpg);
+    background-image: url(../assets/hero_cover.jpg);
     background-position: top;
     object-fit: cover;
 }
 
 .heroimage {
     background-color: #491F08;
-    background-image: url(../assets/heroCover.jpg);
+    background-image: url(../assets/hero_cover.jpg);
     background-position: top;
     object-fit: cover;
     border-bottom: 3px solid #658320;
@@ -227,7 +227,7 @@ footer {
     height: 63rem;
     width: 100%;
     background-color: #491F08;
-    background-image: url(../assets/heroCover.jpg);
+    background-image: url(../assets/hero_cover.jpg);
     background-position: top;
     object-fit: cover;
     text-shadow: 2px 2px 4px #120802;
