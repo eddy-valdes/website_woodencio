@@ -2,7 +2,7 @@
     height: 63rem;
     width: 100%;
     @include hero();
-    text-shadow: 2px 2px 4px map-get($palette_secondary, bkg_dark);
+    text-shadow: 1px 1px 2px map-get($palette_secondary, bkg_dark);
 
     section {
         .titular-home {
@@ -11,6 +11,10 @@
 
             p {
                 color: map-get($palette_secondary, bkg_light);
+            }
+
+            .subtitle {
+                color: #C05F28;
             }
 
             .home-button {

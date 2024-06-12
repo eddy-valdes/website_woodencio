@@ -29,7 +29,7 @@ header {
                             text-transform: uppercase;
                             color: map-get($palette_primary, color_accent);
 
-                            & :hover {
+                            &:hover {
                                 color: map-get($palette_primary, color_detail);
                             }
                         }

@@ -6,7 +6,7 @@
     font-weight: 400;
     font-style: normal;
     
-    & ::selection {
+    &::selection {
         color: map-get($palette_primary, color_detail);
         background-color: map-get($palette_secondary, bkg_color);
     }

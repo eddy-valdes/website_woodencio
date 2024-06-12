@@ -16,63 +16,75 @@
         }
     }
 
-    /*______Home______*/
-
-    .main-home {
-        height: 100vh;
-    }
-
-    .titular-home {
-        margin-top: 24vh;
-    }
-
-    .home {
-        height: 80vh;
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
-    /*______Hi There______*/
-
-    .hithere-woodencio {
-        opacity: 1;
-    }
-
-    /*______Contact Me Page______*/
-    .form,
-    .map {
-        padding: 3rem 3.75rem 4.5rem;
-    }
-
-    .contactMe {
-        padding: 0 6rem;
-        max-width: 1500px;
-    }
-
     footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
 
-    .footerContent {
-        padding: 2rem 6rem;
-        max-width: 1500px;
-        flex-direction: row;
-        justify-content: space-between;
-        align-content: center;
-    }
+        .footerContent {
+            padding: 2rem 6rem;
+            max-width: 1500px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: center;
 
-    .footerTexts {
-        width: 60%;
-    }
+            .footerTexts {
+                width: 60%;
+            }
 
-    .footerLinks {
-        width: 20%;
-    }
+            .footerLinks {
+                width: 20%;
 
-    .footerNav ul li {
-        padding: 0.5rem;
+                div {
+                    .footerNav {
+                        ul {
+                            li {
+                                padding: 0.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*______Home______*/
+
+.main-home {
+    height: 100vh;
+
+    section {
+        .titular-home {
+            margin-top: 24vh;
+        }
+
+        .home {
+            height: 80vh;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+/*______Hi There______*/
+
+.hithere {
+    .hithere-woodencio {
+        opacity: 1;
+    }
+}
+
+
+/*______Contact Me Page______*/
+
+.contactMe {
+    padding: 0 6rem;
+    max-width: 1500px;
+
+    .form,
+    .map {
+        padding: 3rem 3.75rem 4.5rem;
     }
 }
 

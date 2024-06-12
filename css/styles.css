@@ -7,7 +7,7 @@
   font-weight: 400;
   font-style: normal;
 }
-* ::selection {
+*::selection {
   color: #658320;
   background-color: #F7C67C;
 }
@@ -112,7 +112,7 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link
   text-transform: uppercase;
   color: #F19F24;
 }
-header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link :hover {
+header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   color: #658320;
 }
 header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item #active {
@@ -156,7 +156,7 @@ footer .footerContent .footerLinks .footerNav ul li .nav-link {
   text-transform: uppercase;
   color: #F19F24;
 }
-footer .footerContent .footerLinks .footerNav ul li .nav-link :hover {
+footer .footerContent .footerLinks .footerNav ul li .nav-link:hover {
   color: #658320;
 }
 footer .footerContent .footerLinks .footerNav ul li #active {
@@ -170,7 +170,7 @@ footer .footerContent .footerLinks .social a {
 footer .footerContent .footerLinks .social a .icon-social {
   fill: #ffffff;
 }
-footer .footerContent .footerLinks .social a .icon-social :hover {
+footer .footerContent .footerLinks .social a .icon-social:hover {
   fill: #F19F24;
 }
 footer .footer-legal {
@@ -193,10 +193,9 @@ footer .footer-legal {
   padding: 0.75rem 2.25rem;
   cursor: pointer;
 }
-.button :hover {
-  color: #F19F24;
-  background-color: #658320;
-  border: 3px solid #F19F24;
+.button:hover {
+  color: #658320;
+  background-color: #491F08;
 }
 
 .main-home {
@@ -206,7 +205,7 @@ footer .footer-legal {
   background-image: url(../assets/hero_cover.jpg);
   background-position: top;
   object-fit: cover;
-  text-shadow: 2px 2px 4px #120802;
+  text-shadow: 1px 1px 2px #120802;
 }
 .main-home section .titular-home {
   margin-top: 30vh;
@@ -214,6 +213,9 @@ footer .footer-legal {
 }
 .main-home section .titular-home p {
   color: #FBE2BD;
+}
+.main-home section .titular-home .subtitle {
+  color: #C05F28;
 }
 .main-home section .titular-home .home-button input {
   margin: 60px 0;
@@ -395,53 +397,56 @@ footer .footer-legal {
     padding: 0 6rem;
     max-width: 1500px;
   }
-  /*______Home______*/
-  .main-home {
-    height: 100vh;
-  }
-  .titular-home {
-    margin-top: 24vh;
-  }
-  .home {
-    height: 80vh;
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  /*______Hi There______*/
-  .hithere-woodencio {
-    opacity: 1;
-  }
-  /*______Contact Me Page______*/
-  .form,
-  .map {
-    padding: 3rem 3.75rem 4.5rem;
-  }
-  .contactMe {
-    padding: 0 6rem;
-    max-width: 1500px;
-  }
   footer {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .footerContent {
+  footer .footerContent {
     padding: 2rem 6rem;
     max-width: 1500px;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
   }
-  .footerTexts {
+  footer .footerContent .footerTexts {
     width: 60%;
   }
-  .footerLinks {
+  footer .footerContent .footerLinks {
     width: 20%;
   }
-  .footerNav ul li {
+  footer .footerContent .footerLinks div .footerNav ul li {
     padding: 0.5rem;
   }
 }
+/*______Home______*/
+.main-home {
+  height: 100vh;
+}
+.main-home section .titular-home {
+  margin-top: 24vh;
+}
+.main-home section .home {
+  height: 80vh;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/*______Hi There______*/
+.hithere .hithere-woodencio {
+  opacity: 1;
+}
+
+/*______Contact Me Page______*/
+.contactMe {
+  padding: 0 6rem;
+  max-width: 1500px;
+}
+.contactMe .form,
+.contactMe .map {
+  padding: 3rem 3.75rem 4.5rem;
+}
+
 @media (min-width: 992px) {
   /*______My History Page___*/
   .card-image {

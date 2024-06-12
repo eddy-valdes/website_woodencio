@@ -36,7 +36,7 @@ footer {
                             text-transform: uppercase;
                             color: map-get($palette_primary, color_accent);
 
-                            & :hover {
+                            &:hover {
                                 color: map-get($palette_primary, color_detail);
                             }
                         }
@@ -58,7 +58,7 @@ footer {
                     .icon-social {
                         fill: #ffffff;
 
-                        & :hover {
+                        &:hover {
                             fill: map-get($palette_primary, color_accent);
                         }
                     }
