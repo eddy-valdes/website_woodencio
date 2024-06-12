@@ -1,0 +1,39 @@
+.main-home {
+    height: 63rem;
+    width: 100%;
+    @include hero();
+    text-shadow: 2px 2px 4px map-get($palette_secondary, bkg_dark);
+
+    section {
+        .titular-home {
+            margin-top: 30vh;
+            z-index: 1;
+
+            p {
+                color: map-get($palette_secondary, bkg_light);
+            }
+
+            .home-button {
+                input {
+                    margin: 60px 0;
+                }
+            }
+
+            .textPS {
+                margin: 30px 0;
+                font-style: italic;
+                opacity: 50%;
+            }
+        }
+
+        .home {
+            height: 60vh;
+            display: flex;
+            flex-direction: row-reverse;
+
+            .home-woodencio {
+                height: 100%;
+            }
+        }
+    }
+}

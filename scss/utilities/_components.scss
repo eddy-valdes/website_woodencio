@@ -1,0 +1,18 @@
+/*______Buttons______*/
+
+.button {
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: map-get($palette_primary,color_second);
+    background-color: map-get($palette_primary, color_accent);
+    border: none;
+    padding: 0.75rem 2.25rem;
+    cursor: pointer;
+
+    & :hover {
+        color: map-get($palette_primary, color_accent);
+        background-color: map-get($palette_primary, color_detail);
+        border: 3px solid map-get($palette_primary, color_accent);
+    }
+}

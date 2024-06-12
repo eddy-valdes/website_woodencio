@@ -1,0 +1,14 @@
+.card-image {
+    padding: 1.125rem 0;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    p {
+        color: map-get($palette_secondary, bkg_medium);
+        font-style: italic;
+        margin: 0.75rem 0;
+    }
+}

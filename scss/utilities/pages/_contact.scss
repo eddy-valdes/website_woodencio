@@ -1,0 +1,80 @@
+.contactMe {
+    padding: 0;
+
+    .form {
+        background-color: map-get($palette_primary, color_detail);
+        padding: 3rem 1.5rem 4.5rem;
+
+        h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: map-get($palette_secondary, bkg_light);
+        }
+
+        p,
+        label {
+            color: map-get($palette_secondary, bkg_light);
+        }
+
+        form {
+            div {
+                .sr-only {
+                    display: none;
+                }
+
+                .form-control {
+                    font-size: 1.125rem;
+                    line-height: 135%;
+                    color: map-get($palette_primary, color_main);
+                    background-color: map-get($palette_secondary, bkg_body);
+                    border: 0;
+                    border-radius: 0;
+                    padding: 0.5625rem 0.75rem;
+                    margin-bottom: 1.5rem;
+                    width: 100%;
+
+                    &::placeholder {
+                        color: map-get($palette_primary, color_main);
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+
+        .formAbout {
+            margin-bottom: 2.25rem;
+
+            .formAboutCheck {
+                display: flex;
+                flex-direction: row;
+                align-items: first baseline;
+                flex-wrap: nowrap;
+                margin: 0.75rem 0;
+
+                #contactAwesome,
+                #contactNotSoAwesome,
+                #contactNewsletter {
+                    margin-right: 0.75rem;
+                }
+            }
+        }
+
+    }
+}
+
+.map {
+    background-color: map-get($palette_secondary, bkg_light);
+    padding: 3rem 1.5rem 4.5rem;
+
+    h2,
+    p {
+        text-align: center;
+    }
+
+    iframe {
+        width: 100%;
+        height: 80%;
+        min-height: 360px;
+    }
+}
+

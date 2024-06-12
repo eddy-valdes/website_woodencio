@@ -1,0 +1,52 @@
+/*______HEADER______*/
+
+header {
+    position: absolute;
+    width: 100%;
+
+    .navbar {
+        --bs-navbar-toggler-icon-bg: url("../assets/icon_menu.svg");
+        --bs-navbar-toggler-font-size: 1.8rem;
+        --bs-navbar-toggler-border-color: none;
+
+        .container-fluid {
+            padding: 0 0.75rem;
+
+            .navbar-brand {
+                img {
+                    height: 48px;
+                }
+            }
+
+            .navbar-collapse {
+                flex-grow: 0;
+
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            font-size: 1.5rem;
+                            line-height: 135%;
+                            text-transform: uppercase;
+                            color: map-get($palette_primary, color_accent);
+
+                            & :hover {
+                                color: map-get($palette_primary, color_detail);
+                            }
+                        }
+                        #active {
+                            color: map-get($palette_primary, color_detail);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bg-light {
+        background-color: map-get($palette_primary, color_main);
+        background-image: url(../assets/hero_cover.jpg);
+        background-position: top;
+        object-fit: cover;
+    }
+}
+

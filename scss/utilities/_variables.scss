@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+$palette_primary: (
+    color_main:#491F08,
+    color_second:#C05F28,
+    color_accent:#F19F24,
+    color_detail:#658320
+);
+
+$palette_secondary: (
+    bkg_dark:#120802,
+    bkg_medium:#765746,
+    bkg_color:#F7C67C,
+    bkg_light:#FBE2BD,
+    bkg_body:#FEF5E9
+);
+
+@mixin font_data($sice, $line, $weight) {
+    font-size: $sice;
+    line-height: $line;
+    font-weight: $weight;
+    color: map-get($palette_primary, color_second);
+}
+
+@mixin hero {
+    background-color: map-get($palette_primary, color_main);
+    background-image: url(../assets/hero_cover.jpg);
+    background-position: top;
+    object-fit: cover;
+}

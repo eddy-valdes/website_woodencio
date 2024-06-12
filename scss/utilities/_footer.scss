@@ -1,0 +1,79 @@
+/*______FOOTER______*/
+
+footer {
+    width: 100%;
+    background-color: map-get($palette_secondary, bkg_dark);
+    border-top: 18px solid map-get($palette_primary, color_detail);
+
+    .footerContent {
+        padding: 2rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+
+        .footerTexts {
+            p {
+                color: map-get($palette_primary, color_second);
+                opacity: 60%;
+            }
+
+        }
+
+        .footerLinks {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .footerNav {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 0;
+
+                    li {
+                        .nav-link {
+                            font-size: 1.125rem;
+                            padding: 0.5rem 0;
+                            text-transform: uppercase;
+                            color: map-get($palette_primary, color_accent);
+
+                            & :hover {
+                                color: map-get($palette_primary, color_detail);
+                            }
+                        }
+
+                        #active {
+                            color: map-get($palette_primary, color_detail);
+                        }
+                    }
+                }
+
+            }
+
+            .social {
+                a {
+                    padding: 1rem 0;
+                    display: flex;
+                    flex-direction: column;
+
+                    .icon-social {
+                        fill: #ffffff;
+
+                        & :hover {
+                            fill: map-get($palette_primary, color_accent);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .footer-legal {
+        width: 100%;
+        color: map-get($palette_primary, color_main);
+        border-top: 1px solid map-get($palette_primary, color_detail);
+        font-size: 1rem;
+        text-align: center;
+        padding: 0.75rem 0;
+    }
+}

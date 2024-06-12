@@ -1,0 +1,64 @@
+/*______GENERAL LAYOUT______*/
+
+body {
+    background-color: map-get($palette_secondary, bkg_body);
+    @include font_data(1.125rem, 135%, 600);
+    color: map-get($palette_primary, color_main);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+h1 {
+    @include font_data(2.25rem, 150%, 600);
+    text-transform: uppercase;
+}
+
+h2 {
+    @include font_data(1.5rem, 150%, 600);
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+h3 {
+    @include font_data(1.5rem, 150%, 600);
+    font-style: normal;
+    margin-bottom: 0.75rem;
+}
+
+.heroimage {
+    @include hero();
+    border-bottom: 3px solid map-get($palette_primary, color_detail);
+    width: 100%;
+    height: 180px;
+}
+
+main {
+    padding: 4rem 0 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    section {
+        width: 100%;
+        padding: 0 1.5rem;
+
+        .titular {
+            margin-bottom: 3rem;
+
+            .subtitle {
+                color: #C05F28;
+            }
+        }
+    }
+
+    .row {
+        --bs-gutter-x: 0;
+    }
+}
