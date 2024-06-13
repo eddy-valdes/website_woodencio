@@ -23,7 +23,7 @@ $palette_secondary: (
 }
 
 @mixin hero {
-    background-color: map-get($palette_primary, color_main);
+    background-color: hsla(0, 0%, 0%, 0) !important; 
     background-image: url(../assets/hero_cover.jpg);
     background-position: top;
     object-fit: cover;

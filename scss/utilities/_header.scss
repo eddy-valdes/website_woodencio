@@ -5,7 +5,7 @@ header {
     width: 100%;
     animation-name: header_enter;
     animation-iteration-count: 1;
-    animation-timing-function: ease-in;
+    animation-timing-function: ease-out;
     animation-duration: 500ms;
 
     .navbar {
@@ -48,26 +48,10 @@ header {
     }
 
     .bg-light {
-        background-color: map-get($palette_primary, color_main);
-        background-image: url(../assets/hero_cover.jpg);
-        background-position: top;
-        object-fit: cover;
-    }
-}
-
-@keyframes header_enter {
-    0% {
-        transform: translateY(-60px);
-        opacity: 0;
-    }
-    75% {
-        transform: translateY(6px);
-    }
-    90% {
-        transform: translateY(-3px);
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
+        @include hero();
+        animation-name: headerbkg_enter;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-out;
+        animation-duration: 500ms;
     }
 }

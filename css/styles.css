@@ -32,11 +32,15 @@ ul {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 3rem;
   line-height: 150%;
   font-weight: 600;
   color: #C05F28;
   text-transform: uppercase;
+  animation-name: h1_enter;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 500ms;
 }
 
 h2 {
@@ -58,7 +62,7 @@ h3 {
 }
 
 .heroimage {
-  background-color: #491F08;
+  background-color: hsla(0, 0%, 0%, 0) !important;
   background-image: url(../assets/hero_cover.jpg);
   background-position: top;
   object-fit: cover;
@@ -82,6 +86,10 @@ main section .titular {
 }
 main section .titular .subtitle {
   color: #C05F28;
+  animation-name: subtitle_enter;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 500ms;
 }
 main .row {
   --bs-gutter-x: 0;
@@ -93,7 +101,7 @@ header {
   width: 100%;
   animation-name: header_enter;
   animation-iteration-count: 1;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-out;
   animation-duration: 500ms;
 }
 header .navbar {
@@ -123,28 +131,16 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item #active {
   color: #658320;
 }
 header .bg-light {
-  background-color: #491F08;
+  background-color: hsla(0, 0%, 0%, 0) !important;
   background-image: url(../assets/hero_cover.jpg);
   background-position: top;
   object-fit: cover;
+  animation-name: headerbkg_enter;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 500ms;
 }
 
-@keyframes header_enter {
-  0% {
-    transform: translateY(-60px);
-    opacity: 0;
-  }
-  75% {
-    transform: translateY(6px);
-  }
-  90% {
-    transform: translateY(-3px);
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 /*______FOOTER______*/
 footer {
   width: 100%;
@@ -207,22 +203,23 @@ footer .footer-legal {
   display: block;
   font-weight: 600;
   text-transform: uppercase;
-  color: #C05F28;
+  color: #658320;
   background-color: #F19F24;
-  border: none;
+  border: 1px solid #F19F24;
   padding: 0.75rem 2.25rem;
   cursor: pointer;
-  transition: color 500ms, background-color 500ms;
+  transition: color 250ms, background-color 500ms;
 }
 .button:hover {
-  color: #658320;
-  background-color: #491F08;
+  color: #F19F24;
+  background-color: #658320;
+  border: 1px solid #F19F24;
 }
 
 .main-home {
   height: 63rem;
   width: 100%;
-  background-color: #491F08;
+  background-color: hsla(0, 0%, 0%, 0) !important;
   background-image: url(../assets/hero_cover.jpg);
   background-position: top;
   object-fit: cover;
@@ -472,6 +469,53 @@ footer .footer-legal {
   }
   footer .footerContent .footerLinks div .footerNav ul li {
     padding: 0.5rem;
+  }
+}
+@keyframes h1_enter {
+  0% {
+    transform: translateX(-8rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes subtitle_enter {
+  0% {
+    transform: translateX(-4rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes header_enter {
+  0% {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(6px);
+  }
+  90% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes headerbkg_enter {
+  0% {
+    background-image: none;
+  }
+  99% {
+    background-image: none;
+  }
+  100% {
+    background-image: url(../assets/hero_cover.jpg);
   }
 }
 

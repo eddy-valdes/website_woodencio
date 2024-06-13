@@ -1,0 +1,63 @@
+//______GENERAL______
+
+//______H1, subtitle Animation______
+
+@keyframes h1_enter {
+    0% {
+        transform: translateX(-8rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes subtitle_enter {
+    0% {
+        transform: translateX(-4rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+//______Header Animation______
+
+@keyframes header_enter {
+    0% {
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+
+    75% {
+        transform: translateY(6px);
+    }
+
+    90% {
+        transform: translateY(-3px);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes headerbkg_enter { //Header Background (.bg-light)
+    0% {
+        background-image: none;
+    }
+
+    99% {
+        background-image: none;
+    }
+
+    100% {
+        background-image: url(../assets/hero_cover.jpg);
+    }
+}

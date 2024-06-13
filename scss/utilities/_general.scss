@@ -16,8 +16,12 @@ ul {
 }
 
 h1 {
-    @include font_data(2.25rem, 150%, 600);
+    @include font_data(3rem, 150%, 600);
     text-transform: uppercase;
+    animation-name: h1_enter;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 500ms;
 }
 
 h2 {
@@ -53,7 +57,11 @@ main {
             margin-bottom: 3rem;
 
             .subtitle {
-                color: #C05F28;
+                color: map-get($palette_primary, color_second);
+                animation-name: subtitle_enter;
+                animation-iteration-count: 1;
+                animation-timing-function: ease-out;
+                animation-duration: 500ms;
             }
         }
     }
