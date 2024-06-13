@@ -41,3 +41,22 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+    .main-home {
+        height: 100vh;
+    
+        section {
+            .titular-home {
+                margin-top: 24vh;
+            }
+    
+            .home {
+                height: 80vh;
+                display: flex;
+                flex-direction: row-reverse;
+            }
+        }
+    }
+
+}

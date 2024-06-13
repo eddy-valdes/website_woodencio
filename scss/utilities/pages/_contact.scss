@@ -58,7 +58,6 @@
                 }
             }
         }
-
     }
 }
 
@@ -78,3 +77,15 @@
     }
 }
 
+@media (min-width: 768px) {
+
+    .contactMe {
+        padding: 0 6rem;
+        max-width: 1500px;
+
+        .form,
+        .map {
+            padding: 3rem 3.75rem 4.5rem;
+        }
+    }
+}

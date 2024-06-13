@@ -91,6 +91,10 @@ main .row {
 header {
   position: absolute;
   width: 100%;
+  animation-name: header_enter;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 500ms;
 }
 header .navbar {
   --bs-navbar-toggler-icon-bg: url("../assets/icon_menu.svg");
@@ -125,6 +129,22 @@ header .bg-light {
   object-fit: cover;
 }
 
+@keyframes header_enter {
+  0% {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(6px);
+  }
+  90% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /*______FOOTER______*/
 footer {
   width: 100%;
@@ -152,7 +172,6 @@ footer .footerContent .footerLinks .footerNav ul {
 }
 footer .footerContent .footerLinks .footerNav ul li .nav-link {
   font-size: 1.125rem;
-  padding: 0.5rem 0;
   text-transform: uppercase;
   color: #F19F24;
 }
@@ -168,7 +187,8 @@ footer .footerContent .footerLinks .social a {
   flex-direction: column;
 }
 footer .footerContent .footerLinks .social a .icon-social {
-  fill: #ffffff;
+  fill: #FEF5E9;
+  transition: fill 500ms;
 }
 footer .footerContent .footerLinks .social a .icon-social:hover {
   fill: #F19F24;
@@ -192,6 +212,7 @@ footer .footer-legal {
   border: none;
   padding: 0.75rem 2.25rem;
   cursor: pointer;
+  transition: color 500ms, background-color 500ms;
 }
 .button:hover {
   color: #658320;
@@ -234,6 +255,19 @@ footer .footer-legal {
   height: 100%;
 }
 
+@media (min-width: 768px) {
+  .main-home {
+    height: 100vh;
+  }
+  .main-home section .titular-home {
+    margin-top: 24vh;
+  }
+  .main-home section .home {
+    height: 80vh;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
 .hithere {
   position: relative;
 }
@@ -272,6 +306,11 @@ footer .footer-legal {
   font-style: italic;
 }
 
+@media (min-width: 768px) {
+  .hithere .hithere-woodencio {
+    opacity: 1;
+  }
+}
 .card-image {
   padding: 1.125rem 0;
 }
@@ -285,6 +324,11 @@ footer .footer-legal {
   margin: 0.75rem 0;
 }
 
+@media (min-width: 992px) {
+  .card-image {
+    padding: 0.75rem 3rem;
+  }
+}
 .gallery {
   width: 100%;
   padding: 0 1.5rem;
@@ -315,6 +359,7 @@ footer .footer-legal {
   background: hsla(0, 0%, 0%, 0.5);
   opacity: 0;
   padding: 1rem;
+  transition: opacity 500ms;
 }
 .gallery .gallery-image li:hover .over-text span {
   opacity: 1;
@@ -389,6 +434,16 @@ footer .footer-legal {
 }
 
 @media (min-width: 768px) {
+  .contactMe {
+    padding: 0 6rem;
+    max-width: 1500px;
+  }
+  .contactMe .form,
+  .contactMe .map {
+    padding: 3rem 3.75rem 4.5rem;
+  }
+}
+@media (min-width: 768px) {
   /*md*/
   header .navbar .container-fluid {
     padding: 0 3.75rem;
@@ -417,40 +472,6 @@ footer .footer-legal {
   }
   footer .footerContent .footerLinks div .footerNav ul li {
     padding: 0.5rem;
-  }
-}
-/*______Home______*/
-.main-home {
-  height: 100vh;
-}
-.main-home section .titular-home {
-  margin-top: 24vh;
-}
-.main-home section .home {
-  height: 80vh;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-/*______Hi There______*/
-.hithere .hithere-woodencio {
-  opacity: 1;
-}
-
-/*______Contact Me Page______*/
-.contactMe {
-  padding: 0 6rem;
-  max-width: 1500px;
-}
-.contactMe .form,
-.contactMe .map {
-  padding: 3rem 3.75rem 4.5rem;
-}
-
-@media (min-width: 992px) {
-  /*______My History Page___*/
-  .card-image {
-    padding: 0.75rem 3rem;
   }
 }
 

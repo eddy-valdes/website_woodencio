@@ -3,6 +3,10 @@
 header {
     position: absolute;
     width: 100%;
+    animation-name: header_enter;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 500ms;
 
     .navbar {
         --bs-navbar-toggler-icon-bg: url("../assets/icon_menu.svg");
@@ -33,6 +37,7 @@ header {
                                 color: map-get($palette_primary, color_detail);
                             }
                         }
+
                         #active {
                             color: map-get($palette_primary, color_detail);
                         }
@@ -50,3 +55,19 @@ header {
     }
 }
 
+@keyframes header_enter {
+    0% {
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+    75% {
+        transform: translateY(6px);
+    }
+    90% {
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
