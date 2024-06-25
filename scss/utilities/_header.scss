@@ -49,6 +49,7 @@ header {
 
     .bg-light {
         @include hero();
+        background-color: hsla(0, 0%, 0%, 0)!important;
         animation-name: headerbkg_enter;
         animation-iteration-count: 1;
         animation-timing-function: ease-out;

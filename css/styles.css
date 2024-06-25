@@ -62,7 +62,7 @@ h3 {
 }
 
 .heroimage {
-  background-color: hsla(0, 0%, 0%, 0) !important;
+  background-color: hsla(0, 0%, 0%, 0);
   background-image: url(../assets/hero_cover.jpg);
   background-position: top;
   object-fit: cover;
@@ -131,10 +131,11 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item #active {
   color: #658320;
 }
 header .bg-light {
-  background-color: hsla(0, 0%, 0%, 0) !important;
+  background-color: hsla(0, 0%, 0%, 0);
   background-image: url(../assets/hero_cover.jpg);
   background-position: top;
   object-fit: cover;
+  background-color: hsla(0, 0%, 0%, 0) !important;
   animation-name: headerbkg_enter;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
@@ -165,6 +166,9 @@ footer .footerContent .footerLinks .footerNav ul {
   display: flex;
   flex-direction: column;
   padding-left: 0;
+}
+footer .footerContent .footerLinks .footerNav ul li {
+  padding: 0.5rem;
 }
 footer .footerContent .footerLinks .footerNav ul li .nav-link {
   font-size: 1.125rem;
@@ -217,9 +221,9 @@ footer .footer-legal {
 }
 
 .main-home {
-  height: 63rem;
+  min-height: 100vh;
   width: 100%;
-  background-color: hsla(0, 0%, 0%, 0) !important;
+  background-color: hsla(0, 0%, 0%, 0);
   background-image: url(../assets/hero_cover.jpg);
   background-position: top;
   object-fit: cover;
@@ -466,9 +470,6 @@ footer .footer-legal {
   }
   footer .footerContent .footerLinks {
     width: 20%;
-  }
-  footer .footerContent .footerLinks div .footerNav ul li {
-    padding: 0.5rem;
   }
 }
 @keyframes h1_enter {
