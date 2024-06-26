@@ -49,7 +49,7 @@ header {
 
     .bg-light {
         @include hero();
-        background-color: hsla(0, 0%, 0%, 0)!important;
+        background-color: hsla(0, 0%, 0%, 0)!important; //This is for overwrite an !important in the bootstrap code, cause they used it so happily
         animation-name: headerbkg_enter;
         animation-iteration-count: 1;
         animation-timing-function: ease-out;

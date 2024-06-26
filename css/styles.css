@@ -444,6 +444,36 @@ footer .footer-legal {
     padding: 3rem 3.75rem 4.5rem;
   }
 }
+.error_page {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: hsla(0, 0%, 0%, 0);
+  background-image: url(../assets/hero_cover.avif);
+  background-position: top;
+  object-fit: cover;
+  text-shadow: 1px 1px 2px #120802;
+}
+.error_page section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.error_page section div .error_content {
+  max-width: 100vw;
+}
+.error_page section div h1 {
+  font-size: 1.5rem;
+  color: #F19F24;
+}
+.error_page section div p {
+  font-size: 1.125rem;
+  color: #F19F24;
+  text-align: center;
+}
+.error_page section div a {
+  margin: 0.75rem 0;
+}
+
 @media (min-width: 768px) {
   /*md*/
   header .navbar .container-fluid {

@@ -1,0 +1,31 @@
+.error_page {
+    min-height: 100vh;
+    width: 100vw;
+    @include hero();
+    text-shadow: 1px 1px 2px map-get($palette_secondary, bkg_dark);
+
+    section {
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .error_content {
+                max-width: 100vw;
+            }
+            h1 {
+                font-size: 1.5rem;
+                color: map-get($palette_primary, color_accent);
+            }
+
+            p {
+                font-size: 1.125rem;
+                color: map-get($palette_primary, color_accent);
+                text-align: center;
+            }
+            a {
+                margin: 0.75rem 0;
+            }
+        }
+    }
+}
