@@ -195,7 +195,7 @@ footer .footerContent .footerLinks .social a .icon-social:hover {
 }
 footer .footer-legal {
   width: 100%;
-  color: #491F08;
+  color: #C05F28;
   border-top: 1px solid #658320;
   font-size: 1rem;
   text-align: center;
@@ -207,16 +207,16 @@ footer .footer-legal {
   display: block;
   font-weight: 600;
   text-transform: uppercase;
-  color: #658320;
-  background-color: #F19F24;
+  color: #F19F24;
+  background-color: #658320;
   border: 1px solid #F19F24;
-  padding: 0.75rem 2.25rem;
+  padding: 0.75rem 3rem;
   cursor: pointer;
   transition: color 250ms, background-color 500ms;
 }
 .button:hover {
-  color: #F19F24;
-  background-color: #658320;
+  color: #658320;
+  background-color: #F19F24;
   border: 1px solid #F19F24;
 }
 
@@ -231,7 +231,7 @@ footer .footer-legal {
 }
 .main-home section .titular-home {
   margin-top: 30vh;
-  z-index: 1;
+  z-index: 2;
 }
 .main-home section .titular-home p {
   color: #FBE2BD;
@@ -254,6 +254,7 @@ footer .footer-legal {
 }
 .main-home section .home .home-woodencio {
   height: 100%;
+  z-index: 1;
 }
 
 @media (min-width: 768px) {

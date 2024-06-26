@@ -72,7 +72,7 @@ footer {
 
     .footer-legal {
         width: 100%;
-        color: map-get($palette_primary, color_main);
+        color: map-get($palette_primary, color_second);
         border-top: 1px solid map-get($palette_primary, color_detail);
         font-size: 1rem;
         text-align: center;

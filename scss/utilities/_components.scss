@@ -4,16 +4,16 @@
     display: block;
     font-weight: 600;
     text-transform: uppercase;
-    color: map-get($palette_primary, color_detail);
-    background-color: map-get($palette_primary, color_accent);
+    color: map-get($palette_primary, color_accent);
+    background-color: map-get($palette_primary, color_detail);
     border: 1px solid map-get($palette_primary, color_accent);
-    padding: 0.75rem 2.25rem;
+    padding: 0.75rem 3rem;
     cursor: pointer;
     transition: color 250ms, background-color 500ms;
 
     &:hover {
-        color: map-get($palette_primary, color_accent);
-        background-color: map-get($palette_primary, color_detail);
-        border: 1px solid  map-get($palette_primary, color_accent);
+        color: map-get($palette_primary, color_detail);
+        background-color: map-get($palette_primary, color_accent);
+        border: 1px solid map-get($palette_primary, color_accent);
     }
 }
